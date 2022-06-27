@@ -25,9 +25,9 @@ jobs:
       run: pipenv run jupyter execute scrape.ipynb
     - name: Add and commit	
       run: |-	
-        git add .	
+        git add .
         git config user.name "Automated"	
         git config user.email "actions@users.noreply.github.com"	
-        git commit -m "Latest teacher vacancy data"" 	
+        git commit -m "Latest teacher vacancy data"
     - name: Push	
       run: git push
