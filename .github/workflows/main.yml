@@ -32,7 +32,7 @@ jobs:
     - name: Run scraper
       run: pipenv run jupyter execute scrape.ipynb
     - name: Copy data to data repo
-      run: cp ./data/vacancies_count.csv .
+      run: cp vacancies_count.csv data/vacancies_count.csv
     - name: Add and commit	
       run: |-	
         git add .
