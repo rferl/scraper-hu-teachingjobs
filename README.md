@@ -8,5 +8,5 @@ To get started with this on your computer:
 2. Install Python and [pipenv](https://packaging.python.org/en/latest/guides/tool-recommendations/).
 3. Run `pipenv install jupyterlab requests bs4`
 4. Give it a test with `pipenv run jupyter execute scrape.ipynb`
-5. Open up [cnr_headlines.csv](cnr_headlines.csv) to see the results.
+5. Open up the CSV file to see the results.
 6. Open the [scrape.ipynb](scrape.ipynb) in Jupyter Notebook to see how everything works, and to edit.
