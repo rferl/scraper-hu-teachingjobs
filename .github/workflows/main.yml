@@ -16,13 +16,6 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
-    - name: Checkout data repo
-      uses: actions/checkout@v3
-      with:
-        repository: rferl/data-hu-teachingjobs
-        ref: 'main'
-        path: './data'
-        fetch-depth: 0
     - name: Install pipenv
       run: pipx install pipenv
     - uses: actions/setup-python@v2
@@ -32,8 +25,6 @@ jobs:
     - run: pipenv install --python `which python`
     - name: Run scraper
       run: pipenv run jupyter execute scrape.ipynb
-    - name: Copy data to data repo
-      run: cp vacancies_count.csv data/vacancies_count.csv
     - name: Add and commit	
       run: |-	
         git add .
